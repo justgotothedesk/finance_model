@@ -45,7 +45,7 @@ recentReport = filings[0]
 # 상기 help들로 메소드 찾아보세요.
 
 
-# 삼성전자 2023 사업보고서 : https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20230307000542
+# 삼성전자 2023 사업보고서 : https://dart.fss.or.kr/dsaf001/main.do?rcpNo=20240312000736
 
 # 사업보고서 목차
 print(recentReport.pages)
