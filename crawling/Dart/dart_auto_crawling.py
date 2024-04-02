@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 apiKey = 'DART_API_KEY'
-dart.set_api_key(api_key=apiKey)
+dart.set_api_key(api_key = apiKey)
 
 corps = dart.get_corp_list()
 
