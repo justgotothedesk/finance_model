@@ -7,8 +7,10 @@ import dart_fss as dart
 from bs4 import BeautifulSoup
 import pandas as pd
 
-apiKey = '45e284591cad627ed6b7b278608bbe5b81f6893d'
-dart.set_api_key(api_key=apiKey)
+with open('./dart_api_key.txt', 'r') as f :
+    API_KEY = f.readline()
+
+dart.set_api_key(API_KEY = API_KEY)
 
 # dart에 상장된 기업 중 삼성전자 검색
 corps = dart.get_corp_list()
@@ -24,7 +26,7 @@ stock_list = df[df['stock_code'].notnull()]  #상장 종목
 non_stock_list = df[df['stock_code'].isnull()]  #비상장 종목
 print(stock_list.head())
 
-#csv 파일로 저장
+# csv 파일로 저장
 # stock_list.to_csv('상장종목.csv')
 # non_stock_list.to_csv('비상장종목.csv')
 
